@@ -1,0 +1,35 @@
+body {
+     background-color: #382B08;
+}
+
+.photo-group {
+     padding: 5%;
+}
+
+.sqs-block-content {
+     margin: -25px !important;
+}
+
+.flip3D{ width:360px; height:270px; margin:10px; float:left; }
+.flip3D > .front{
+     position:absolute;
+     transform: perspective( 360px ) rotateY( 0deg );
+     background:#FC0; width:360px; height:270px; border-radius: 7px;
+     backface-visibility: hidden;
+     transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+     position:absolute;
+     transform: perspective( 360px ) rotateY( 180deg );
+     background: #80BFFF; width:360px; height:270px; border-radius: 7px;
+     backface-visibility: hidden;
+     transition: transform .5s linear 0s;
+     font: 1.5em bold italic serif;
+     padding: 35px 15px 0px 15px;
+}
+.flip3D:hover > .front{
+     transform: perspective( 360px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+     transform: perspective( 360px ) rotateY( 0deg );
+}
