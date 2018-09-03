@@ -6,6 +6,18 @@ body {
      padding: 5%;
 }
 
+header{
+     height: 30px;
+     padding-left: 5%;
+     padding-top: 5%;
+     color: white;
+}
+.words{
+     color: white;
+     padding-top: 15%;
+     padding-left: 10%;
+}
+
 .sqs-block-content {
      margin: -25px !important;
 }
